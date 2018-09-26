@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">ILP CSM</string>
+
+    <!-- Common Info -->
+    <string name="NotAvailable">Not Available</string>
+    <string name="Back">Back</string>
+    <string name="HomeTitle">India Literacy Project</string>
+    <string name="HomeSubTitle">A catalyst for 100% literacy in India</string>
+    <string name="HomeInfo">Careers, Courses, Colleges</string>
+    <string name="HomeInfo2">What you want to do?</string>
+    <string name="HomeCareer">Career</string>
+    <string name="HomeCourse">Course</string>
+    <string name="HomeCollege">College</string>
+    <string name="HomeGuidance">Guidance</string>
+    <string name="PleaseWait">Please Wait.....!</string>
+    <string name="InternetConnection">Please Check your internet Connection</string>
+    <string name="Retry">Retry</string>
+    <string name="Search">Search</string>
+    <string name="Cancel">Cancel</string>
+    <string name="QuadrobayCopyRights">© Quadrobay Technologies LLP. All Rights Reserved</string>
+
+    <!-- Filter Info -->
+    <string name="Filter">Filter</string>
+    <string name="FilterInfo">Select the Course Level you want to filter</string>
+    <string name="SelectCourseLevel">Select Course Level</string>
+
+    <!-- Main screen Positions -->
+    <string name="PositionValueMain">main</string>
+
+    <!-- Career Screen Positions -->
+    <string name="PositionValueCareerMain">career_main</string>
+    <string name="PositionValueSubCareer">career_info</string>
+    <string name="PositionValueCareerDetailsFromMain">career_detail</string>
+    <string name="PositionValueCareerDetails">career_main_sub_detail</string>
+
+    <!-- Career Navigations -->
+    <string name="ListOfCareers">List of Careers</string>
+    <string name="CareerCategory">Career Category</string>
+    <string name="CareerDetails">Career Details</string>
+
+    <!-- Career Info -->
+    <string name="StudyInfo">What Should I Study?</string>
+    <string name="WorkInfo">What Will I Do?</string>
+    <string name="SalaryInfo">What Will I Earn?</string>
+    <string name="EnvironmentInfo">My Work Environment</string>
+
+    <!-- Course Screen Positions -->
+    <string name="PositionValueCourseMain">course_main</string>
+    <string name="PositionValueProgramInsideCourse">course_program</string>
+    <string name="PositionValueCollegeInsideCourseProgram">course_college</string>
+    <string name="PositionValueCoursesOfferedByProgramCollege">course_college_course</string>
+    <string name="PositionValueCourseNameSearch">course_name_search</string>
+    <string name="PositionValueCourseNameSearchProgram">name_course_program</string>
+    <string name="PositionValueCourseNameSearchCollege">name_course_college</string>
+    <string name="PositionValueCourseNameSearchCollegeCourse">name_course_detail_college</string>
+
+    <!-- Course Navigation -->
+    <string name="CourseList">Course List</string>
+    <string name="CourseDetails">Course Details</string>
+    <string name="OfferingColleges">Offering Colleges</string>
+
+    <!-- Course List Info -->
+    <string name="CourseListCourseLevel">Course Level : %s</string>
+    <string name="CourseListProgram">Program : %s</string>
+    <string name="CourseListDuration">Duration : %s</string>
+
+    <!-- College List Info -->
+    <string name="CollegeListAddress">%s%s</string>
+
+    <!-- College Screen Positions -->
+    <string name="PositionValueCollegeMain">college_main</string>
+    <string name="PositionValueCollegeCourse">college_course</string>
+    <string name="PositionValueCollegeNameSearch">college_name_search</string>
+
+    <!-- College Navigation -->
+    <string name="CollegeList">College List</string>
+    <string name="CoursesOffered">Courses Offered</string>
+
+    <!-- Guidance Screen Positions -->
+    <string name="PositionValueGuidance">Guidance_Main</string>
+
+    <!-- Guidance Navigation -->
+    <string name="GuidanceNavigation">Guidance</string>
+
+    <!-- AboutUs Details -->
+    <string name="AboutILP">ABOUT ILP</string>
+    <string name="AboutUsILPDetail">India Literacy Project (ILP), is a non-profit organization dedicated to the cause of literacy and education in India for the past 28 years. ILP has been working on a range of programs to increase enrollment, improve retention and positively impact quality of learning in schools. Read more at www.ilpnet.org</string>
+    <string name="Disclaimer">Disclaimer</string>
+    <string name="DisclaimerInfo">Information provided on this website and app is \n derived from reliable sources like government websites, college websites and others sources in public domain. All content in this site is for reference purpose only,  users are advised to contact the respective colleges or original websites for clarification in case of doubts.\n\n ILP does not warrant the accuracy or completeness of the materials or the reliability of any advices, opinions, statements or other information as displayed or distributed through the Applications or Website herein after referred to as Applications. You acknowledge that any reliance on any such opinion, advice, statement, memorandum, or information shall be at your own/sole risk and consequences attached there to.\n \n ILP as being a developer to the Applications reserves its right, in its sole discretion, to correct/rectify any errors or omissions in any portion of the materials.</string>
+
+    <!-- Search Page Info -->
+    <string name="SearchPageSelectStateFirst">Select State First</string>
+    <string name="SearchPageSelectState">Select State</string>
+    <string name="SearchPageSelectDistrict">Select District</string>
+    <string name="SearchPageSelectCourse">Select Course</string>
+
+    <!-- ImageView Content Descriptions -->
+    <string name="NavigationButton">Navigation Back Button Image</string>
+    <string name="FilterButton">Filter Button Image</string>
+    <string name="ILPLogoImage">ILP Logo</string>
+    <string name="AppLogoImage">Application Image</string>
+    <string name="CareerLogoImage">ILP Logo</string>
+    <string name="CourseLogoImage">Course Logo</string>
+    <string name="CollegeLogoImage">College Logo</string>
+    <string name="GuidanceLogoImage">Guidance Logo</string>
+    <string name="BreadCrumArrow">BreadCrum Arrow Image</string>
+    <string name="CareerListImage">Career List Image View</string>
+    <string name="RightArrow">Right Arrow Image</string>
+
+
+</resources>

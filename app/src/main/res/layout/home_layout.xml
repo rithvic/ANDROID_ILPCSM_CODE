@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attribute="http://schemas.android.com/tools"
+    android:id="@+id/home_layout_main_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_gadient_background"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/top_navigation_layout"
+        android:background="@drawable/main_background_gradient"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/navigation_btn_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:background="@color/TransparentColor"
+                android:padding="15dp"
+                android:id="@+id/back_button"
+                android:src="@drawable/navbackbutton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/NavigationButton" />
+
+            <TextView
+                android:id="@+id/navigation_back_title"
+                android:textSize="22sp"
+                android:paddingTop="15dp"
+                android:text="@string/Back"
+                android:textColor="@color/WhiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            attribute:ignore="UselessLeaf">
+
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:visibility="gone"
+            android:scaleType="fitCenter"
+            android:background="@color/TransparentColor"
+            android:padding="10dp"
+            android:id="@+id/filter_button"
+            android:src="@drawable/filter_icon"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/FilterButton" />
+
+    </LinearLayout>
+
+    <developer.shivam.crescento.CrescentoContainer
+        android:id="@+id/cresento_top_view"
+        android:layout_weight="1"
+    android:elevation="20dp"
+    attribute:curvature="50dp"
+    android:layout_width="match_parent"
+    attribute:gravity="bottom"
+    android:layout_height="0dp">
+
+        <RelativeLayout
+            android:background="@color/TransparentColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <developer.shivam.crescento.CrescentoContainer
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:elevation="20dp"
+                attribute:curvature="50dp"
+                android:layout_width="match_parent"
+                attribute:gravity="bottom"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/WhiteColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ilplogo"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:contentDescription="@string/ILPLogoImage" />
+
+                    <LinearLayout
+                        android:layout_marginStart="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        attribute:ignore="NestedWeights">
+
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:textSize="22sp"
+                            android:text="@string/HomeTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="@string/HomeSubTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:text="@string/HomeInfo"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        attribute:ignore="NestedWeights" />
+
+                    <TextView
+                        android:text="@string/HomeInfo2"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            </developer.shivam.crescento.CrescentoContainer>
+
+        </RelativeLayout>
+    </developer.shivam.crescento.CrescentoContainer>
+
+
+    <LinearLayout
+        android:id="@+id/menu_cardview1"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <android.support.v7.widget.CardView
+
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:id="@+id/career_card_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:contentPadding="0dp"
+            attribute:ignore="NestedWeights">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/main_career_logo"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/CareerLogoImage" />
+
+            <TextView
+                android:text="@string/HomeCareer"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:id="@+id/course_card_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:contentPadding="0dp">
+
+            <!-- your layout stuff here -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/course_main"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/CourseLogoImage" />
+
+                <TextView
+                    android:text="@string/HomeCourse"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_cardview2"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="14dp"
+        android:layout_height="0dp">
+
+        <android.support.v7.widget.CardView
+
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:id="@+id/college_card_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:contentPadding="0dp"
+            attribute:ignore="NestedWeights">
+
+            <!-- your layout stuff here -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:padding="10dp"
+                    android:src="@drawable/college_main"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/CollegeLogoImage" />
+
+                <TextView
+                    android:text="@string/HomeCollege"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:id="@+id/about_us_card_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:contentPadding="0dp">
+
+            <!-- your layout stuff here -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/guidancenewlogo"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/GuidanceLogoImage" />
+
+            <TextView
+                android:text="@string/HomeGuidance"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/simpleSearchView"
+        android:visibility="gone"
+        android:background="@color/WhiteColor"
+        android:layout_width="match_parent"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Career"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:id="@+id/career_recycler_view"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="0dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_loading_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <ProgressBar
+            android:indeterminateTint="@color/WhiteColor"
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/detail_scroll"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="5dp"
+            android:background="@color/WhiteColor"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/WhiteColor"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/career_detail_title"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/WhiteColor"
+                    android:background="@color/TitleColor"
+                    android:text="@string/HomeCareer"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/career_domain_txt_view"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/NotAvailable"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:tint="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        android:src="@drawable/breadcrumrightarrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/BreadCrumArrow" />
+
+                    <TextView
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/career_sub_domain_txt_view"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/NotAvailable"
+                        android:textSize="16sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="5dp"
+            android:background="@color/WhiteColor"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/WhiteColor"
+                android:background="@color/TitleColor"
+                android:text="@string/StudyInfo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/career_education_txt_view"
+                    android:layout_margin="5dp"
+                    android:text="@string/NotAvailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="5dp"
+            android:background="@color/WhiteColor"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/WhiteColor"
+                    android:background="@color/TitleColor"
+                    android:text="@string/WorkInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/career_description_txt_view"
+                    android:layout_margin="5dp"
+                    android:text="@string/NotAvailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="5dp"
+            android:background="@color/WhiteColor"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/WhiteColor"
+                    android:background="@color/TitleColor"
+                    android:text="@string/SalaryInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/career_salary_txt_view"
+                    android:layout_margin="5dp"
+                    android:text="@string/NotAvailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="5dp"
+            android:background="@color/WhiteColor"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/WhiteColor"
+                    android:background="@color/TitleColor"
+                    android:text="@string/EnvironmentInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/career_enviroment_txt_view"
+                    android:layout_margin="5dp"
+                    android:text="@string/NotAvailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+        <RelativeLayout
+            android:layout_marginBottom="40dp"
+            android:visibility="gone"
+            android:id="@+id/loading_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/loading_inner_view"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.victor.loading.book.BookLoading
+                    android:id="@+id/bookloading"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                     />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/WhiteColor"
+                    android:text="@string/PleaseWait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/WhiteColor"
+                    android:text="@string/InternetConnection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:text="@string/Retry"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/WhiteColor"
+                    android:layout_gravity="center"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <WebView
+        android:visibility="gone"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="1"
+        android:id="@+id/guidance_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </WebView>
+
+    <ExpandableListView
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:id="@+id/lvExp"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

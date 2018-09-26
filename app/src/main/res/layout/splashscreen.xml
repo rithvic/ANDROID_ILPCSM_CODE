@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        app:cardPreventCornerOverlap="false"
+        app:cardBackgroundColor="@color/WhiteColor"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ilplogo"
+                    android:layout_gravity="center"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/ILPLogoImage" />
+
+                <LinearLayout
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_marginTop="15dp"
+                        android:textSize="22sp"
+                        android:text="@string/HomeTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/cardview_dark_background"
+                        android:text="@string/HomeSubTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:src="@drawable/applogo"
+        android:layout_weight="1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        tools:ignore="InefficientWeight"
+        android:contentDescription="@string/AppLogoImage" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:text="@string/QuadrobayCopyRights"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</LinearLayout>

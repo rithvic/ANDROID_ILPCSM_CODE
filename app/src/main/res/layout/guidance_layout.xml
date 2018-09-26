@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/main_gadient_background"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/about_us_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/WhiteColor"
+                android:text="@string/AboutILP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/AboutUsILPDetail"
+                android:textAlignment="center"
+                android:textColor="@color/WhiteColor" />
+
+            <TextView
+                android:textAlignment="center"
+                android:textColor="@color/WhiteColor"
+                android:textSize="20sp"
+                android:text="@string/Disclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/WhiteColor"
+                android:text="@string/DisclaimerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
